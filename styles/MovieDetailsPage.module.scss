@@ -1,0 +1,45 @@
+.movie {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.movie__button {
+  margin-bottom: 15px;
+}
+
+.movie__contentWrapper {
+  display: flex;
+}
+
+.movie__link {
+  display: block;
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: 200ms linear;
+  &:hover {
+    color: tomato;
+  }
+  &Active {
+    text-decoration: underline;
+    color: tomato;
+  }
+}
+
+.movie__textWrapper {
+  margin-left: 20px;
+}
+.movies__btn {
+  background-color: tomato;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms linear;
+  margin-bottom: 15px;
+  &:active {
+    transform: scale(1.1);
+  }
+}
