@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Loader/Loader.jsx", "components/NavLink/NavLink.jsx", "components/NavBar/NavBar.jsx", "pages/movies/[id]/[[...path]].jsx"  ],
   "exclude": [
     "node_modules"
   ]

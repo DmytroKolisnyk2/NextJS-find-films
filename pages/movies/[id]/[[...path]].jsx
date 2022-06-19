@@ -3,7 +3,7 @@ import { useState} from "react";
 import { pageRequest } from "../../../services/moviesRequest";
 import { useRouter } from "next/router";
 
-import type defaultImage from "../../../img/no-photo.png";
+import defaultImage from "../../../img/no-photo.png";
 
 import Loader from "../../../components/Loader/Loader";
 import Cast from "../../../components/Cast/Cast";
@@ -18,8 +18,6 @@ export default function MovieDetailsPage({ requestData, dataError }) {
   const [movieData, setMovieData] = useState(requestData || null);
   const [error, setError] = useState(dataError || "");
   const [isLoading, setIsLoading] = useState(false);
-
-  // MovieDetailsPage.title = movieData.title || "Hmm, movie not found";
 
   return (
     <section className={styles.movie}>
@@ -36,7 +34,7 @@ export default function MovieDetailsPage({ requestData, dataError }) {
               width={300}
               src={
                 movieData.poster_path
-                  ? `https://image.tmdb.org/t/p/w300/${movieData.poster_path}`
+                  ? `https://image.tmdb.org/t/p/w300${movieData.poster_path}`
                   : defaultImage
               }
               alt=""

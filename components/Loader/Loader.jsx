@@ -6,7 +6,7 @@ import styles from "./Loader.module.scss";
 const Loader = () => {
   return (
     <div className={styles.loader}>
-      <Oval heigth="100" width="100" color="tomato" arialLabel="Loading..." />
+      <Oval height="100" width="100" color="tomato" arialLabel="Loading..." />
     </div>
   );
 };
